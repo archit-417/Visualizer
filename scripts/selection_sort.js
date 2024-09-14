@@ -9,29 +9,33 @@ function Selection_sort()
     document.getElementById("Space_Worst").innerText="O(1)";
 
     c_delay=0;
+    let c1 = "#16423C";
+    let c2 = "red";
+    let c3 = "yellow";
+    let c4 = "green";
 
     for(var i=0;i<array_size-1;i++)
     {
-        div_update(divs[i],div_sizes[i],"red");//Color update
+        div_update(divs[i],div_sizes[i], c2);//Color update
 
         index_min=i;
 
         for(var j=i+1;j<array_size;j++)
         {
-            div_update(divs[j],div_sizes[j],"yellow");//Color update
+            div_update(divs[j],div_sizes[j], c3);//Color update
 
             if(div_sizes[j]<div_sizes[index_min])
             {
                 if(index_min!=i)
                 {
-                    div_update(divs[index_min],div_sizes[index_min],"rgb(0,0,67)");//Color update
+                    div_update(divs[index_min],div_sizes[index_min], c1);//Color update
                 }
                 index_min=j;
-                div_update(divs[index_min],div_sizes[index_min],"red");//Color update
+                div_update(divs[index_min],div_sizes[index_min], c2);//Color update
             }
             else
             {
-                div_update(divs[j],div_sizes[j],"rgb(0,0,67)");//Color update
+                div_update(divs[j],div_sizes[j], c1);//Color update
             }
         }
         
@@ -41,13 +45,13 @@ function Selection_sort()
             div_sizes[index_min]=div_sizes[i];
             div_sizes[i]=temp;
 
-            div_update(divs[index_min],div_sizes[index_min],"red");//Height update
-            div_update(divs[i],div_sizes[i],"red");//Height update
-            div_update(divs[index_min],div_sizes[index_min],"rgb(0,0,67)");//Color update
+            div_update(divs[index_min],div_sizes[index_min], c2);//Height update
+            div_update(divs[i],div_sizes[i], c2);//Height update
+            div_update(divs[index_min],div_sizes[index_min], c1);//Color update
         }
-        div_update(divs[i],div_sizes[i],"green");//Color update
+        div_update(divs[i],div_sizes[i], c4);//Color update
     }
-    div_update(divs[i],div_sizes[i],"green");//Color update
+    div_update(divs[i],div_sizes[i], c4);//Color update
 
     enable_buttons();
 }

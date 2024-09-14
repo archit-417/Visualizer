@@ -5,12 +5,12 @@
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     font-size: large;
     font-weight: bold;
-    /* text-transform: uppercase; */
+    text-transform: capitalize; 
   }
   
   
   nav {
-    background-color: rgb(43, 78, 126);
+    background-color: #16423C;
     color: white;
     display: -ms-grid;
     display: grid;
@@ -29,7 +29,7 @@
     place-content: center;
     padding: 5% 0%;
   }
-  
+
   nav .array-inputs #a_size {
     padding: 5% 0%;
   }
@@ -49,6 +49,7 @@
   
   nav .array-inputs #a_generate:hover {
     cursor: pointer;
+    color: #6A9C89;
   }
   
   nav .header_right {
@@ -68,25 +69,30 @@
   }
   
   nav .header_right .algos {
-    display: -ms-grid;
-    display: grid;
-     -ms-grid-columns: 16.66667%; 
-        grid-template-columns: repeat(6, 16.66667%);
-    place-content: center;
-    padding: 2% 0%;
+    /* display: -ms-grid; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: true;
+    justify-content: space-between;
+    /* -ms-grid-columns: 16.66667%; 
+        grid-template-columns: repeat(6, 16.66667%); */
+    /* place-content: center; */
+    padding: 1% 0%;
   }
   
   nav .header_right .algos button {
     background-color: transparent;
     border: none;
     color: white;
+   
     outline: none;
     padding: 5% 0%;
     font-size: x-large;
   }
   
   nav .header_right .algos button:hover {
-    background-color: rgb(10, 20, 131);
+    background-color: transparent;
+    color: #6A9C89;
     cursor: pointer;
   }
   
@@ -101,17 +107,17 @@
   }
   
   nav .header_right .algos .butt_selected {
-    background-color: white;
-    color: rgb(10, 20, 131);
+    /* background-color: white; */
+    color: #6A9C89
   }
   
   nav .header_right .algos .butt_selected:hover {
-    background-color: rgb(10, 20 131);
+    background-color: transparent;
+    color:#6A9C89;
     cursor: pointer;
   }
   
   nav .header_right .algos .butt_unselected:hover {
-    background-color: rgb(10, 20, 131);
     cursor: pointer;
   }
   

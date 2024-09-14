@@ -15,6 +15,7 @@ cont.style = "flex-direction:row";
 
 //Array generation and updation.
 inp_gen.addEventListener("click", generate_array);
+inp_gen.addEventListener("click", enable_NewArray);
 inp_as.addEventListener("input", update_array_size);
 
 function generate_array(){
@@ -25,7 +26,7 @@ function generate_array(){
         divs[i] = document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size = 0.1;
-        divs[i].style = " margin:0% " + margin_size + "%; background-color : rgb(0,0,67); width:" 
+        divs[i].style = " margin:5% " + margin_size + "%; background-color : #16423C; width:" 
         + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }    
 }
