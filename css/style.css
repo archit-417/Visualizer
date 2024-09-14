@@ -64,6 +64,7 @@
   
   nav .header_right .nav-heading {
     display: inline-block;
+    margin: 5px;
     font-size: xx-large;
     padding: 3% 0%;
   }
