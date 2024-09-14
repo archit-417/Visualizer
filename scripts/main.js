@@ -13,6 +13,12 @@ var margin_size;
 var cont = document.getElementById("array_container");
 cont.style = "flex-direction:row";
 
+//Four colors used during sorting
+let c1 = "#16423C";
+let c2 = "red";
+let c3 = "yellow";
+let c4 = "green";
+
 //Array generation and updation.
 inp_gen.addEventListener("click", generate_array);
 inp_gen.addEventListener("click", enable_NewArray);

@@ -15,11 +15,6 @@ function Merge()
     enable_buttons();
 }
 
-let c1 = "#16423C";
-let c2 = "red";
-let c3 = "yellow";
-let c4 = "green";
-
 function merge_sort(start,mid,end)
 {
     var p=start,q=mid+1;

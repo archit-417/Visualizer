@@ -9,10 +9,6 @@ function Bubble()
     document.getElementById("Space_Worst").innerText="O(1)";
 
     c_delay=0;
-    let c1 = "#16423C";
-    let c2 = "red";
-    let c3 = "yellow";
-    let c4 = "green";
 
     for(var i=0; i<array_size-1; i++){
         for(var j=0; j<array_size-i-1; j++){

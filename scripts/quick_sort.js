@@ -15,11 +15,6 @@ function Quick()
     enable_buttons();
 }
 
-let c1 = "#16423C";
-let c2 = "red";
-let c3 = "yellow";
-let c4 = "green";
-
 function quick_partition (start, end)
 {
     var i = start + 1;

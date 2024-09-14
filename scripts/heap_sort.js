@@ -14,8 +14,6 @@ function Heap()
     
     enable_buttons();
 }
-    let c1 = "#16423C";
-    let c2 = "red";
 
 function swap(i,j)
 {
