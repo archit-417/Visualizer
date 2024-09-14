@@ -1,0 +1,1 @@
+This projects allows the user to view various sorting algorithms in action. Different colors are used to demonstrate different stages of sorting. Future scope: This project can also be integrated with visualization of various path finding algorithms in Graphs.
