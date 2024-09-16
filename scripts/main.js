@@ -14,7 +14,7 @@ var cont = document.getElementById("array_container");
 cont.style = "flex-direction:row";
 
 //Four colors used during sorting
-let c1 = "#16423C";
+let c1 = "#31473A";
 let c2 = "red";
 let c3 = "yellow";
 let c4 = "green";
@@ -32,7 +32,7 @@ function generate_array(){
         divs[i] = document.createElement("div");
         cont.appendChild(divs[i]);
         margin_size = 0.1;
-        divs[i].style = " margin:5% " + margin_size + "%; background-color : #16423C; width:" 
+        divs[i].style = " margin:5% " + margin_size + "%; background-color :"+ c1 +"; width:" 
         + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }    
 }
@@ -56,7 +56,7 @@ function disable_buttons(){
 
         butts_algos[i].disabled = true;
         inp_as.disabled = true;
-        inp_gen.disabled = false; //TODO: Not disable New Array button
+         //TODO: Not disable New Array button
         inp_aspeed.disabled = true;
     }
 }

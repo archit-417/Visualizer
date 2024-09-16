@@ -10,7 +10,7 @@
   
   
   nav {
-    background-color: #16423C;
+    background-color: #31473A;
     color: white;
     display: -ms-grid;
     display: grid;
@@ -49,7 +49,7 @@
   
   nav .array-inputs #a_generate:hover {
     cursor: pointer;
-    color: #6A9C89;
+    color: #588277;
   }
   
   nav .header_right {
@@ -64,20 +64,16 @@
   
   nav .header_right .nav-heading {
     display: inline-block;
-    margin: 5px;
+    margin: 3px;
     font-size: xx-large;
     padding: 3% 0%;
   }
   
   nav .header_right .algos {
-    /* display: -ms-grid; */
     display: flex;
     flex-direction: row;
     flex-wrap: true;
     justify-content: space-between;
-    /* -ms-grid-columns: 16.66667%; 
-        grid-template-columns: repeat(6, 16.66667%); */
-    /* place-content: center; */
     padding: 1% 0%;
   }
   
@@ -93,7 +89,7 @@
   
   nav .header_right .algos button:hover {
     background-color: transparent;
-    color: #6A9C89;
+    color: #588277;
     cursor: pointer;
   }
   
@@ -109,12 +105,12 @@
   
   nav .header_right .algos .butt_selected {
     /* background-color: white; */
-    color: #6A9C89
+    color: #588277
   }
   
   nav .header_right .algos .butt_selected:hover {
     background-color: transparent;
-    color:#6A9C89;
+    color:#588277;
     cursor: pointer;
   }
   
