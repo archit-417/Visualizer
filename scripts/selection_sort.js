@@ -12,7 +12,7 @@ function Selection_sort()
     {
         div_update(divs[i],div_sizes[i], c2);//Color update
 
-        index_min=i;
+        let index_min = i;
 
         for(var j=i+1;j<array_size;j++)
         {
@@ -33,7 +33,7 @@ function Selection_sort()
             }
         }
         
-        if(index_min!=i)
+        if(index_min != i)
         {
             var temp=div_sizes[index_min];
             div_sizes[index_min]=div_sizes[i];

@@ -1,100 +1,103 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en" style="height: 100%;">
+
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <title>Sorting Visualizer</title>
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
-    <link rel = "stylesheet" href = "./css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
 
 </head>
-<body style="background-color: #EDF4F2;">
 
+<body style="height: 100%;">
     <header>
-        <nav>
-            <div class="array-inputs">
-                <p>Array Size:</p>
-                <input id="a_size" type="range" min=20 max=150 step=1 value=80>
-                <p>Sorting Speed:</p>
+        <div class="header-left">
+            <div class="array-details">
+                <p class="input-label">Array Size:</p>
+                <input id="a_size" type="range" min=20 max=120 step=1 value=80>
+                <p class="input-label">Sorting Speed:</p>
                 <input id="a_speed" type="range" min=1 max=5 step=1 value=4>
+            </div>            
+            <div class="array-input">
                 <button id="a_generate">New Array</button>
             </div>
+        </div>
+        
 
-            <div class="header_right">
-                <p class="nav-heading" style="text-align:right;">Sorting Algorithm Visualizer</p>
-
-                <div class="algos">
-                    <button>Bubble</button>
-                    <button>Selection</button>
-                    <button>Insertion</button>
-                    <button>Merge</button>
-                    <button>Quick</button>
-                    <button style = "margin-right: 1px;">Heap</button>
-                </div>
+        <div class="header_right">
+            <p class="nav-heading">Sorting Algorithm Visualizer</p>
+            
+            <div class="algos">
+                <button>Bubble</button>
+                <button>Selection</button>
+                <button>Insertion</button>
+                <button>Merge</button>
+                <button>Quick</button>
+                <button>Heap</button>
             </div>
-
-        </nav>
+        </div>
     </header>
 
     <section>
-
         <div id="Info_Cont1">
-
-            <h3>TIME COMPLEXITY</h3>
-
-            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+            <div class="heading">
+                <p>TIME COMPLEXITY</p>
+            </div>
+    
+            <div class="Complexity_Container1" id="Time_Complexity_Types_Container">
 
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Worst case:</p>
                     <p id="Time_Worst"></p>
                 </div>
-                
+
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Average case:</p>
                     <p id="Time_Average"></p>
                 </div>
-                
+
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Best case:</p>
                     <p id="Time_Best"></p>
                 </div>
-
             </div>
-
         </div>
 
-        <div id="array_container">
-            
-        </div>
+        <div id="array_container"> </div>
 
         <div id="Info_Cont2">
-
-            <h3>SPACE COMPLEXITY</h3>
-
-            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
-
+            <div class="heading">
+                <p>SPACE COMPLEXITY<p>
+            </div>
+            <div class="Complexity_Container2" id="Space_Complexity_Types_Container">
                 <div class="Pair_Definitions">
                     <p class="Sub_Heading">Worst case:</p>
                     <p id="Space_Worst"></p>
                 </div>
-                
+                <p class="credits">Project by Archit Srivastava</p>
             </div>
-
         </div>
-
     </section>
 
-    <footer>
-
-    </footer>
+    <!-- <footer>
+        <p>Made by Archit Srivastava</p>
+    </footer> -->
 
     <script src="./scripts/visualizations.js"></script>
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+    <script src="./scripts/visualizations.js"></script> <!--This should be loaded after main.js-->
 
     <script src="./scripts/bubble_sort.js"></script>
     <script src="./scripts/selection_sort.js"></script>
@@ -103,4 +106,5 @@
     <script src="./scripts/quick_sort.js"></script>
     <script src="./scripts/heap_sort.js"></script>
 </body>
+
 </html>

@@ -9,15 +9,15 @@ var butts_algos = document.querySelectorAll(".algos button");
 
 var div_sizes = [];
 var divs = [];
-var margin_size;
+var margin_size = 0.1;
 var cont = document.getElementById("array_container");
 cont.style = "flex-direction:row";
 
 //Four colors used during sorting
 let c1 = "#31473A";
-let c2 = "red";
-let c3 = "yellow";
-let c4 = "green";
+let c2 = "crimson";
+let c3 = "rgb(3, 103, 218)";
+let c4 = "rgb(6, 100, 42)";
 
 //Array generation and updation.
 inp_gen.addEventListener("click", generate_array);
@@ -31,7 +31,6 @@ function generate_array(){
         div_sizes[i] = Math.floor(Math.random() * 0.5*(inp_as.max - inp_as.min) ) + 10;
         divs[i] = document.createElement("div");
         cont.appendChild(divs[i]);
-        margin_size = 0.1;
         divs[i].style = " margin:5% " + margin_size + "%; background-color :"+ c1 +"; width:" 
         + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
     }    

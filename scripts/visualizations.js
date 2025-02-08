@@ -24,7 +24,7 @@ function vis_speed(){
 
 //Decrease numerator to increase speed.
 var delay_time = 10000 / (Math.floor(array_size/10) * speed);
-//This is updated ov every div change so that visualization is visible.
+//This is updated on every div change so that visualization is visible.
 var c_delay = 0;
 
 function div_update(cont, height, color){
